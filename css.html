@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--STYLE字體連結從google font字體下載(英文字體)-->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <style>
+        /*標籤選取器*/
+        h2{
+            color: darkblue
+        }
+        /*類別選取器@點開頭@只能用英文字母開頭盡量不要數字@_和-都可以用*/
+        .abc{
+            color: coral;
+            font-size: 50px
+        }
+        /*ID選取器*/
+        #abc{
+            color: rgba(152, 49, 177, 0.68)
+        }
+        /*外部STYLE字體連結從google font字體下載*/
+        @import url('https://fonts.googleapis.com/css?family=Pacifico');
+         /*外部STYLE字體連結從google early access字體下載*/
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        /*英數字體要在前面@中文字體要用雙引號包@英數字體有空格也要雙引號包
+        @無襯線字體@建議中英文外部連結各一不然載入速度會變慢*/
+        h3{
+            /*font-family: 'Pacifico','Noto Sans TC',sans-serif;*/
+             /*大小/粗度/斜體都是預設值@16px=1em=12pt*/
+            font-size: 16PX;
+            font-weight: bold;
+            font-style: italic;
+        }
+        p{
+            font-size:30PX;
+            /*行高*/
+            line-height: 16px;
+            /*字元間距*/
+            letter-spacing:2px;
+            /*字詞間距@在英文有差因為分的出單字跟詞@中文沒差*/
+            word-spacing:15px;
+            /*字體對齊@其中分散對齊英文較常用中文則無*/
+            text-align: justify
+        }
+        h1{
+            /*字的裝飾品=線@這三種模式的線都可以一起打@空一格打一種@最後一種上面線最少用*/
+            text-decoration: underline overline line-through;
+        }
+        a{
+            /*通常在連結處會打這個消除底線*/
+            text-decoration: none;
+        }
+        /*這是萬用選取器*/
+        *{
+            font-family: 'Pacifico','Noto Sans TC',sans-serif;
+        }
+        /*這是群組選取器*/
+        h1,h2,h3,h4,h5,h6{
+            font-weight: 400
+        }
+        body{
+            /*背景顏色*/
+            background-color: #eee;
+             /*背景圖片@若同時用顏色和圖片會先出現圖片*/
+            background-image: url(img/img9.jpg);
+             /*圖片是否要重複*/
+            background-repeat: no-repeat;
+            /*圖片位置可同時放兩個或者是用background-position: 100px(水平距離) 500px(垂直距離);*/
+            background-position: center;
+            /*圖片附加方式預設值是scroll(隨網頁滾動)*/
+            background-attachment: fixed;
+            /*背景圖會佈滿整個頁面@或是要用100px(寬)100px(高);來設定*/
+            /*通常用了cover前面的 no-repeat;center; fixed;都要這樣設定才不會出錯*/
+            background-size: cover
+        }
+    </style>
+</head>
+<body>
+    <h1 class="abc">qwerasdf</h1>
+    <h1>qwerasdf</h1>
+    <!--權重重的先出現ID>CLASS>標籤-->
+    <h2 class="abc" id="abc">qwerasdf</h2>
+    <h2>qwerasdf</h2>
+    <h3>qwerasdf聯成電腦</h3>
+    <p id="abc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro in sit eos vero impedit odit dolores, cupiditate consequuntur reiciendis repellat molestiae nemo. Facilis tenetur ipsam, fugiat natus quod sit adipisci.
+        <P>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro in sit eos vero impedit odit dolores, cupiditate consequuntur reiciendis repellat molestiae nemo. Facilis tenetur ipsam, fugiat natus quod sit adipisci.
+        </P>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro in sit eos vero impedit odit dolores, cupiditate consequuntur reiciendis repellat molestiae nemo. Facilis tenetur ipsam, fugiat natus quod sit adipisci.
+        </p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro in sit eos vero impedit odit dolores, cupiditate consequuntur reiciendis repellat molestiae nemo. Facilis tenetur ipsam, fugiat natus quod sit adipisci.
+        </p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro in sit eos vero impedit odit dolores, cupiditate consequuntur reiciendis repellat molestiae nemo. Facilis tenetur ipsam, fugiat natus quod sit adipisci.
+        </p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro in sit eos vero impedit odit dolores, cupiditate consequuntur reiciendis repellat molestiae nemo. Facilis tenetur ipsam, fugiat natus quod sit adipisci.
+        </p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro in sit eos vero impedit odit dolores, cupiditate consequuntur reiciendis repellat molestiae nemo. Facilis tenetur ipsam, fugiat natus quod sit adipisci.
+        </p>
+         <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro in sit eos vero impedit odit dolores, cupiditate consequuntur reiciendis repellat molestiae nemo. Facilis tenetur ipsam, fugiat natus quod sit adipisci.
+        </p>
+    <a href="">yahoo</a>
+    
+</body>
+</html>
